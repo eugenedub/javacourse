@@ -1,5 +1,5 @@
 
-public class Bikeworld {
+public class BikeWorld {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
