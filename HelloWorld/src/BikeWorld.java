@@ -5,7 +5,9 @@ public class BikeWorld {
 		// TODO Auto-generated method stub
 		BikeRace goldRace; 
 		BikeRace vlaanderen;
+		Team lotto;
 		int lengteVlaanderen = 230;
+		String nameLotto = "Lotto Nederland Wielerteam";
 		
 		// aanroep zonder parameter
 		goldRace = new BikeRace();
@@ -23,6 +25,9 @@ public class BikeWorld {
 		
 		System.out.print("Teams Amstel Gold Race: ");
 		System.out.println(goldRace.teams);
+		
+		lotto = new Team(nameLotto);
+		System.out.println(lotto.name);
 	}
 
 }
