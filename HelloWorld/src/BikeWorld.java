@@ -2,12 +2,16 @@
 public class BikeWorld {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Declarations
 		BikeRace goldRace; 
 		BikeRace vlaanderen;
 		Team lotto;
+		Team lottoBelgie;
 		int lengteVlaanderen = 230;
 		String nameLotto = "Lotto Nederland Wielerteam";
+		String nameLottoBelgie = "Lotto Belgie Wielerteam";
+		String teamLeaderLottoBelgie = "Willem Flupkens";
+		int numberInTeam;
 		
 		// aanroep zonder parameter
 		goldRace = new BikeRace();
@@ -19,15 +23,23 @@ public class BikeWorld {
 		vlaanderen = new BikeRace(lengteVlaanderen);
 		System.out.println(vlaanderen.kilometers);
 		
-		vlaanderen.ad1team();
+		vlaanderen.add1Team();
+		vlaanderen.add1Team();
+		vlaanderen.add1Team();
 		System.out.print("Teams Ronde van Vlaanderen: ");
 		System.out.println(vlaanderen.teams);
 		
+		goldRace.add1Team();
 		System.out.print("Teams Amstel Gold Race: ");
 		System.out.println(goldRace.teams);
 		
 		lotto = new Team(nameLotto);
-		System.out.println(lotto.name);
+		System.out.println(lotto.getName());
+		
+		numberInTeam = 15;
+		lottoBelgie = new Team(nameLottoBelgie, numberInTeam, teamLeaderLottoBelgie );
+		System.out.println(lottoBelgie.getName());
+		System.out.println(lottoBelgie.getNumberOfCyclists());
+		System.out.println(lottoBelgie.getTeamLeader());
 	}
-
 }
