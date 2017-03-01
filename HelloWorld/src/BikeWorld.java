@@ -2,7 +2,7 @@
 public class BikeWorld {
 
 	public static void main(String[] args) {
-		// Declarations
+		// Declarations (kan overal, hoeft niet bovenin....
 		BikeRace goldRace; 
 		BikeRace vlaanderen;
 		Team lotto;

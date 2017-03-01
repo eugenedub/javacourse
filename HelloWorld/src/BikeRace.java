@@ -15,7 +15,7 @@ public class BikeRace {
 	// Methods
 	public void add1Team() {
 		if (teams < maxTeams)
-			++teams;
+			teams++;
 		else
 			handleTooMany();
 	}
