@@ -30,7 +30,7 @@ public class BikeWorld {
 		vlaanderen.add1Team();
 		vlaanderen.add1Team();
 		vlaanderen.add1Team();
-		System.out.print("Teams Ronde van Vlaanderen: ");
+		System.out.print("Teams Ronde van Vlaanderen dit jaar: ");
 		System.out.println(vlaanderen.teams);
 		
 		goldRace.add1Team();
