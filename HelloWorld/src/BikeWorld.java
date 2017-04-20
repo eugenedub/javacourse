@@ -1,5 +1,5 @@
 
-public class Bikeworld {
+public class BikeWorld {
 
 	private static int hashGoldRace;
 
@@ -7,7 +7,7 @@ public class Bikeworld {
 		// Declarations (kan overal, hoeft niet bovenin....
 		BikeRace goldRace; 
 		BikeRace vlaanderen;
-		Team lottoNL;
+		Team lotto;
 		Team lottoBelgie;
 		int lengteVlaanderen = 230;
 		StringBuilder sb = new StringBuilder(50);
@@ -30,27 +30,24 @@ public class Bikeworld {
 		vlaanderen.add1Team();
 		vlaanderen.add1Team();
 		vlaanderen.add1Team();
-		System.out.print("Teams Ronde van Vlaanderen dit jaar: ");
+		System.out.print("Teams Ronde van Vlaanderen: ");
 		System.out.println(vlaanderen.teams);
 		
 		goldRace.add1Team();
 		System.out.print("Teams Amstel Gold Race: ");
 		System.out.println(goldRace.teams);
 		
-		lottoNL = new Team(nameLotto);
-		System.out.println(lottoNL.getName());
+		lotto = new Team(nameLotto);
+		System.out.println(lotto.getName());
 		
 		numberInTeam = 15;
-		lottoBelgie = new Team(nameLottoBelgie, numberInTeam, teamLeaderLottoBelgie);
+		lottoBelgie = new Team(nameLottoBelgie, numberInTeam, teamLeaderLottoBelgie );
 		System.out.println(lottoBelgie.getName());
 		System.out.println(lottoBelgie.getNumberOfCyclists());
 		System.out.println(lottoBelgie.getTeamLeader());
 		
 		sb = sb.append("Teams: ");
-		sb = sb.append(nameLotto);
-		sb = sb.append(" ");
-		sb = sb.append(nameLottoBelgie);
-
+		sb = sb.append(nameLotto + " " + nameLottoBelgie);
 		System.out.println(sb);
 		hashGoldRace = goldRace.hashCode();
 		System.out.println("hashGoldRace: " + hashGoldRace);
