@@ -7,7 +7,7 @@ public class Bikeworld {
 		// Declarations (kan overal, hoeft niet bovenin....
 		BikeRace goldRace; 
 		BikeRace vlaanderen;
-		Team lotto;
+		Team lottoNL;
 		Team lottoBelgie;
 		int lengteVlaanderen = 230;
 		StringBuilder sb = new StringBuilder(50);
@@ -37,17 +37,20 @@ public class Bikeworld {
 		System.out.print("Teams Amstel Gold Race: ");
 		System.out.println(goldRace.teams);
 		
-		lotto = new Team(nameLotto);
-		System.out.println(lotto.getName());
+		lottoNL = new Team(nameLotto);
+		System.out.println(lottoNL.getName());
 		
 		numberInTeam = 15;
-		lottoBelgie = new Team(nameLottoBelgie, numberInTeam, teamLeaderLottoBelgie );
+		lottoBelgie = new Team(nameLottoBelgie, numberInTeam, teamLeaderLottoBelgie);
 		System.out.println(lottoBelgie.getName());
 		System.out.println(lottoBelgie.getNumberOfCyclists());
 		System.out.println(lottoBelgie.getTeamLeader());
 		
 		sb = sb.append("Teams: ");
-		sb = sb.append(nameLotto + " " + nameLottoBelgie);
+		sb = sb.append(nameLotto);
+		sb = sb.append(" ");
+		sb = sb.append(nameLottoBelgie);
+
 		System.out.println(sb);
 		hashGoldRace = goldRace.hashCode();
 		System.out.println("hashGoldRace: " + hashGoldRace);
