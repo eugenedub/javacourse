@@ -14,17 +14,30 @@ public class Team {
  	Team(String name, int numberOfCyclists, String teamLeader){
 		this.name = name;
 		this.teamLeader = teamLeader;
+		this.numberOfCyclists = numberOfCyclists;
 	}
 	
-	public String getName() {
+	String getName() {
 	       return name;
 	}
 	
-	public String getTeamLeader() {
+	String getTeamLeader() {
 	       return teamLeader;
 	}
 	
-	public int getNumberOfCyclists() {
+	int getNumberOfCyclists() {
 	       return numberOfCyclists;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setNumberOfCyclists(int numberOfCyclists) {
+		this.numberOfCyclists = numberOfCyclists;
+	}
+
+	public void setTeamLeader(String teamLeader) {
+		this.teamLeader = teamLeader;
 	}
 }
