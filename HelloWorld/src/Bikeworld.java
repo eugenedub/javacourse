@@ -1,5 +1,5 @@
 
-public class BikeWorld {
+public class Bikeworld {
 
 	private static int hashGoldRace;
 

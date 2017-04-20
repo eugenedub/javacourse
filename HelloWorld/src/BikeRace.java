@@ -2,7 +2,7 @@
 public class BikeRace {
 	int kilometers = 150;
 	int teams = 0;
-	int maxTeams = 2;
+	private int maxTeams = 2;
 	
 	// constructors
 	BikeRace() {		
