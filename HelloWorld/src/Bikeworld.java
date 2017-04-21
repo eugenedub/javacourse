@@ -22,7 +22,7 @@ public class Bikeworld {
 		vlaanderen = new BikeRace(lengteVlaanderen);
 		System.out.println(vlaanderen.kilometers);
 		
-		vlaanderen.ad1team();
+		vlaanderen.add1Team();
 		System.out.print("Teams Ronde van Vlaanderen: ");
 		System.out.println(vlaanderen.teams);
 		
