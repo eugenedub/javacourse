@@ -6,7 +6,12 @@ public class Bikeworld {
 		BikeRace goldRace; 
 		BikeRace vlaanderen;
 		int lengteVlaanderen = 230;
-		
+		Team lottoNl = new Team();
+        lottoNl.setName("Lotto Jumbo Cycling team");
+
+        Team lottoBe = new Team();
+        lottoBe.setName("Lotto Soudal Cycling team");
+
 		// aanroep zonder parameter
 		goldRace = new BikeRace();
 		System.out.println("zonder parameter");	
