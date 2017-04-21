@@ -1,8 +1,8 @@
 
-public class BikeRace {
+class BikeRace {
 	int kilometers = 150;
 	int teams;
-	int maxTeams = 20;
+    private int maxTeams = 20;
 	
 	// constructors
 	BikeRace() {		
@@ -15,8 +15,9 @@ public class BikeRace {
 	// Methods
 	
 	void ad1team() {
-		if (teams <= maxTeams)
+		if (teams <= maxTeams) {
 			++teams;
+		}
 		
 	}
 
