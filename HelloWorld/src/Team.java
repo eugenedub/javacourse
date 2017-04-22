@@ -2,10 +2,17 @@
  * Created by eugene on 21-4-17.
  * The class for a cycling team
  */
-public class Team {
+class Team {
     private String name;
 
-    public String getName() {
+    Team() {
+    }
+
+    Team(String name) {
+        this.name = name;
+    }
+
+    String getName() {
         return name;
     }
 

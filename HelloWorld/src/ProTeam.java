@@ -5,6 +5,13 @@
 class ProTeam extends Team {
     private double sponsorAmount;
 
+    ProTeam() {
+    }
+
+    public ProTeam(String name) {
+        super(name);
+    }
+
     double getSponsorAmount() {
         return sponsorAmount;
     }
